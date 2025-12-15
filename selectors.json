@@ -1,0 +1,16 @@
+{
+  "app_version": "9.9.5",
+  "note": "Cấu hình tìm nút Facebook cho Tool 2T Studio",
+  "home_url": "https://www.facebook.com/",
+  
+  "btn_create_post": "span[text()='Tạo bài viết']",
+  "btn_reels_tab": "span[text()='Thước phim']",
+  
+  "btn_photo_video": "div[aria-label='Ảnh/video']",
+  
+  "input_caption": "div[aria-label='Viết gì đó...']",
+  
+  "btn_post_submit": "div[aria-label='Đăng']",
+  
+  "error_msg": "Hệ thống đang bảo trì, vui lòng quay lại sau."
+}
