@@ -3,20 +3,18 @@
     "selectors": {
         "switch_trigger": {
             "primary": "xpath://div[@aria-label='Chuyển' and @role='button']",
-            "fallback_text": "Chuyển",
-            "role": "button"
+            "fallback_text": "Chuyển"
         },
         "switch_confirm": {
-            "primary": "xpath://div[@role='dialog']//div[@aria-label='Chuyển' and @role='button']",
-            "fallback_text": "Chuyển",
-            "role": "button"
+            "primary": "xpath://div[@role='dialog']//div[@role='button']//span[text()='Chuyển']",
+            "fallback_text": "Chuyển"
         },
-        "btn_upload_media": {
-            "primary": "xpath://id(\"mount_0_0_N1\")/DIV[1]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/DIV[2]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[2]",
+        "btn_upload_trigger": {
+            "primary": "xpath://div[@aria-label='Ảnh/video' and @role='button']",
             "fallback_text": "Ảnh/video"
         },
         "input_caption": {
-            "primary": "xpath://id(\"mount_0_0_N1\")/DIV[1]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/DIV[2]/DIV[1]/DIV[2]/DIV[4]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[13]/DIV[1]/DIV[1]/DIV[5]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/FORM[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]",
+            "primary": "xpath://div[@role='textbox' and @contenteditable='true']",
             "attribute": "data-lexical-editor"
         },
         "btn_next_step": {
@@ -24,14 +22,9 @@
             "fallback_text": "Tiếp"
         },
         "btn_final_post": {
-            "primary": "xpath://id(\"mount_0_0_N1\")/DIV[1]/DIV[1]/DIV[1]/DIV[3]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[4]/DIV[2]/DIV[1]/DIV[2]/DIV[4]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[13]/DIV[1]/DIV[1]/DIV[5]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[3]/DIV[1]",
+            "primary": "xpath://div[@aria-label='Đăng' and @role='button']",
             "fallback_text": "Đăng",
             "alternative_text": "Chia sẻ"
-        },
-        "check_points": {
-            "is_edit_screen": "Chỉnh sửa thước phim",
-            "is_final_screen": "Cài đặt thước phim",
-            "is_success": "Đã đăng"
         }
     }
 }
