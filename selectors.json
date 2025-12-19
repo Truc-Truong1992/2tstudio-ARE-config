@@ -1,25 +1,37 @@
 {
-  "app_version": "10.0",
-  "note": "Cấu hình XPATH chuẩn cho Facebook New UI - Update 2025",
-  "contact": "2T Studio - Always By Your Side",
-
-  "switch_trigger_xpath": "xpath://span[contains(text(), 'Chuyển sang Trang của')]/following::div[@role='button' or @role='link']//span[text()='Chuyển']",
-  "switch_popup_confirm_xpath": "xpath://div[@role='dialog' and .//*[contains(text(), 'Chuyển trang cá nhân')]]//div[@role='button' and .//span[text()='Chuyển']]",
-  
-  "btn_upload_media_xpath": "xpath://div[@role='button' and .//span[contains(text(), 'Ảnh/video')]]",
-  "btn_upload_backup_xpath": "xpath://div[@role='button']//div[text()='Ảnh/video']",
-  
-  "input_caption_xpath": "xpath://div[@role='textbox' and @contenteditable='true']",
-  
-  "btn_next_aria_xpath": "xpath://div[@aria-label='Tiếp' and @role='button']",
-  "btn_next_text_xpath": "xpath://div[@role='button']//span[text()='Tiếp']",
-  
-  "btn_post_aria_xpath": "xpath://div[@aria-label='Đăng' and @role='button']",
-  "btn_post_text_xpath": "xpath://div[@role='button']//span[text()='Đăng']",
-  
-  "check_text_uploaded": "Công khai",
-  "check_text_switched": "Hoàn tác",
-  "check_text_editing": "Chỉnh sửa thước phim",
-  "check_text_processing": "Đang xử lý",
-  "check_text_posted": "Đã đăng"
+    "app_version": "2.0-Smart-Logic",
+    "selectors": {
+        "switch_trigger": {
+            "primary": "xpath://div[@aria-label='Chuyển' and @role='button']",
+            "fallback_text": "Chuyển",
+            "role": "button"
+        },
+        "switch_confirm": {
+            "primary": "xpath://div[@role='dialog']//div[@aria-label='Chuyển' and @role='button']",
+            "fallback_text": "Chuyển",
+            "role": "button"
+        },
+        "btn_upload_trigger": {
+            "primary": "xpath://div[@aria-label='Ảnh/video' and @role='button']",
+            "fallback_text": "Ảnh/video"
+        },
+        "input_caption": {
+            "primary": "xpath://div[@role='textbox' and @contenteditable='true']",
+            "attribute": "data-lexical-editor"
+        },
+        "btn_next_step": {
+            "primary": "xpath://div[@aria-label='Tiếp' and @role='button']",
+            "fallback_text": "Tiếp"
+        },
+        "btn_final_post": {
+            "primary": "xpath://div[@aria-label='Đăng' and @role='button']",
+            "fallback_text": "Đăng",
+            "alternative_text": "Chia sẻ"
+        },
+        "check_points": {
+            "is_edit_screen": "Chỉnh sửa thước phim",
+            "is_final_screen": "Cài đặt thước phim",
+            "is_success": "Đã đăng"
+        }
+    }
 }
